@@ -1,13 +1,257 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 50px 0 0 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(166, 222, 255,0.1)
+  ;
+}
+.dark {
+  margin: 50px 0 0 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #15232c;
+  color: #eaf5fc;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.app-header {
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+
+.app-header h1 {
+  /* width: 150px;
+  height: 150px; */
+  font-size: 26px;
+}
+
+.app-header h2 {
+  font-size: 1.2rem;
+  color: grey;
+}
+.bottom-panel {
+  margin-top: 20px;
+}
+
+.bottom-panel .new-post-label {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+.app-list {
+    margin-top: 50px;
+}
+.app-list .list-group-item {
+  padding: 20px 35px 10px 35px;
+  margin-top: 10px;
+  background-color:transparent;
+  border-bottom:1px solid #17A2B8
+}
+.app-list-item {
+  font-size: 1.25rem;
+}
+
+.app-list-item button {
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  font-size: 17px;
+  border: 1px solid #6c757d;
+  cursor: pointer;
+  background-color:white
+}
+.app-list-item button:focus {
+    box-shadow: none;
+    outline: none;
+    background-color:#17a2b8
+}
+.app-list-item button:hover {
+  box-shadow: none;
+  outline: none;
+  background-color:#6c757d
+}
+.app-list-item .btn-star {
+    color: #FFD700;
+}
+.app-list-item .btn-trash {
+    color: red;
+}
+.app-list-item .fa-heart {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: red;
+    transition: 0.3s all;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.app-list-item-label {
+  display: block;
+  line-height: 35px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s all;
+  
+}
+
+.app-list-item.like .fa-heart {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.app-list-item.important .app-list-item-label {
+  color: gold;
+}
+
+.app-list-item.important .btn-star {
+    color: #aeaeae;
+}
+.search-panel {
+  margin: 1rem 0;
+}
+
+.search-panel .search-input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+
+.dat1{
+  background-color:#17A2B8;
+  
+  position: absolute;
+  padding:0px 5px 0px 5px;
+  left: 0%;
+  top:0;
+  color: white;
+  
+  font-weight: 700;
+  
+}
+.dat2{
+  background-color:#17A2B8;
+
+  position: absolute;
+  padding:0px 5px 0px 5px;
+  left: 100px;
+  top:0;
+ 
+  font-weight: 500;
+}
+
+.greeting{
+  position: absolute;
+  top:70px;
+  font-weight:500;
+}
+.toggleDivBlack{
+  position: relative;
+  left:90%;
+  width: 40px;
+  height:40px;
+  margin: 3px;
+  font-size: 17px;
+  border: 1px solid #6c757d;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color:white ;
+  padding: 0;
+  transition: all 0.3s;
+}
+.toggleDivBlack img{
+  width: 30px;
+  height: 30px;
+}
+.toggleDivBlack:hover{
+  background-color:#6c757d 
+}
+.toggleDivBlack:focus{
+  border:none;
+  outline: none;
+}
+
+.toggle{
+  position: relative;
+  padding-top: 10px;
+  left :90%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+.reset{
+  position: relative;
+  left:90%;
+  width: 40px;
+  height:40px;
+  margin: 3px;
+  font-size: 17px;
+  border: 1px solid #6c757d;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color:white ;
+  padding: 0;
+  transition: all 0.3s;
+}
+.reset:hover{
+  background-color:#6c757d 
+}
+.reset-name{
+  position: relative;
+  padding-top: 10px;
+  left :90%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+.reset:hover{
+  cursor: pointer;
+}
+.reset:focus{
+  cursor: pointer;
+  border:none;
+  outline: none;
+}
+.reset img{
+  width: 30px;
+  height: 30px;
+}
+.scroll{
+  position: fixed;
+  bottom:10%;
+  right: 10%;
+  transition: all 0.3s;
+  animation:0.9s linear  infinite  drag;
+}
+@keyframes drag{
+  form{
+    bottom:10%; 
+  }
+  to{
+    bottom:13%;
+  }
+}
+.scroll img{
+  width: 50px;
+  height:70px;
+}
+.scroll:hover{
+ cursor: pointer;
 }
